@@ -49,9 +49,10 @@ justify-content: space-between;}
 
 /* Genesis part of Logo */
 .logoGenesis{font-weight: 500;
-font-size:50px;}
+font-size:100%;}
 /* Life & Health part of Logo */
-.logoLife{font-weight: 400;}
+.logoLife{font-weight: 400;
+font-size:70%;}
 
 #navbarItems{padding:30px;}
 
