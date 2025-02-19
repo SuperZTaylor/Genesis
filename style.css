@@ -185,7 +185,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;}
 
-.label{
+.label{/*font-size:30px;*/
 color:var(--textColor);
 margin:auto;
 margin-left:110px;}
@@ -780,7 +780,7 @@ background-color:var(--lightBlue3);}
 
     .contactInput{margin-left:auto;}
 
-    .label{margin-left:auto;}
+    .label{margin-left:40px;}
 
     .name{width:80%;}
 
