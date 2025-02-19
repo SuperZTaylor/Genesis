@@ -296,6 +296,13 @@ margin:auto;
 min-width:400px;
 max-width:800px;}
 
+.accordionTitle{width:100%;
+background-color:var(--footer);
+color:var(--textColor);
+height:80px;
+border-radius: 15px 15px 0px 0px;
+display:none;}
+
 /*------------------------------------------ End of Questions Section ------------------------------------------ */
 
 /*------------------------------------------ Footer ------------------------------------------ */
@@ -798,10 +805,14 @@ background-color:var(--lightBlue3);}
 
     .questionsContainer{flex-direction:column;}
 
-    .questionsText{margin:0px;
-    text-align: center;}
+    .questionsText{display:none;}
+
+    .questionsText > p{display:none;}
 
     .accordionContainer{min-width: 90%;}
+
+    .accordionTitle{display:flex;
+    text-align:center;}
 
     /* ------------------------------------ End of Questions Section ------------------------------------ */
 
