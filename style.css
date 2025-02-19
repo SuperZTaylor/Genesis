@@ -779,6 +779,10 @@ background-color:var(--lightBlue3);}
 
     .label{margin-left:auto;}
 
+    .name{width:80%;}
+
+    .email{width:80%;}
+
     /* ------------------------------------ End of Contact Section ------------------------------------ */
 
     /*------------------------------------------ Providers Section ------------------------------------------ */
