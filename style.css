@@ -12,7 +12,14 @@ body{margin:0px;
     overflow-x:hidden;
 }
 
-p{color:var(--darkText);}
+p{color:var(--darkText);
+font-family: "Lexend", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;}
+
+h1, h2, h3, h4, h5, h6{font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;}
 
 /* Elements */
 
@@ -31,6 +38,11 @@ font-size:30px;}
 .lightText{color:var(--textColor);}
 
 .card{margin:50px auto 50px auto;}
+
+.secondaryHeader{font-size:60px;
+font-family: "Merriweather", serif;
+font-weight: 400;
+font-style: normal;}
 
 /* End of Elements */
 
@@ -154,7 +166,9 @@ flex-direction:row;}
 
 .contactImg{width:45%;
 height:100%;
-background-color:#c1c1c1;}
+background-image:url("images/GenesisContactImg.jpg");
+background-size:cover;
+background-position:center;}
 
 .inputContainer{width:55%;
 display: flex;
@@ -163,8 +177,7 @@ align-items: center;
 justify-content: center;
 }
 
-.inputContainer > h1{color:var(--textColor);
-font-size:50px;}
+.inputContainer > h1{color:var(--textColor);}
 
 .inputContainer > form{width:100%;
 display: flex;
@@ -271,8 +284,7 @@ flex-direction:column;
 align-items:center;
 justify-content:center;}
 
-.questionsText > h1{font-size:50px;
-margin-bottom:30px;
+.questionsText > h1{margin-bottom:30px;
 text-align: center;}
 
 .questionsText > p{font-size:20px;}
@@ -296,6 +308,14 @@ flex-direction:row;
 align-items:center;
 justify-content:center;}
 
+#footerLogo{width:20%;
+    height:20vh;
+    background-image:url(images/LogoText.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:25px auto;}
+
 .footerSection > div{width:25%;
 margin:auto;
 text-align:center;}
@@ -312,9 +332,6 @@ margin:auto;}
 .footerServing{text-align:center;
 color:var(--textColor);
 text-align:center;}
-
-.footerLogo > img{width:100%;
-height:auto;}
 
 .footerContact{color:var(--textColor);
 display:flex;
@@ -462,26 +479,33 @@ position:relative;}
 
 .descriptionSection{width:100vw;
 height:800px;
-background-color:var(--lightBlue2);}
+background-color:var(--lightBlue2);
+display:flex;
+flex-direction:row-reverse;}
 
 .descriptionTextContainer{width:100vw;
 height:400px;
 background-color:var(--lightBlue2);
 display:flex;
-flex-direction:row;
+flex-direction:column;
 align-items:center;
-justify-content:center;}
+justify-content:space-evenly;
+margin:auto;}
 
-.descriptionTextContainer > p{padding:100px;
-width:40%;
+.descriptionTextContainer > p{width:80%;
 font-size:20px;}
 
 .descriptionImg{width:50%;
-height:auto;
+height:400px;
 margin:auto;
-display:flex;}
-
-.descriptionImg > img{margin:auto;}
+margin-left:50px;
+display:flex;
+background-image:url("images/GenesisAboutSkyscraperImg.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
+border-radius:30px;
+box-shadow:0px 10px 10px #c1c1c1;}
 
 
 
@@ -489,7 +513,10 @@ display:flex;}
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-#servicesHeroSection{background-image:none;}
+#servicesHeroSection{background-image:url("images/GenesisServiceImg.jpg");
+background-size:cover;
+background-position:center;
+background-position-y:top;}
 
 #servicesHeroSection > .heroDescriptor{width:50%;
 margin:auto;
@@ -552,18 +579,6 @@ background-color:var(--lightBlue3);}
 
 
     /*------------------------------------------ Providers Section ------------------------------------------ */
-
-    .providersContainer{width:100vw;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding-top:50px;
-    padding-bottom:100px;}
-    
-    .providersContainer > h1{font-size:60px;
-    text-align:center;
-    margin-bottom:50px;}
     
     .sliderContainer{overflow:hidden;
     width:100vw;
@@ -613,57 +628,113 @@ background-color:var(--lightBlue3);}
 
     .accordionContainer{min-width: 90%;}
 
+    .questionsText > p{font-size:20px;
+    width:65vw;}
+
     /* ------------------------------------ End of Questions Section ------------------------------------ */
 
     /* ------------------------------------ Footer ------------------------------------ */
 
-    .footerSection{flex-direction:column;}
+    .footerSection{flex-direction:column-reverse;}
 
     .footerSection > div{width:90%;}
 
-    .footerLogo > img{width:50%;
-    height:auto;}
-
     .phoneLink{display:block;}
+
+    #footerLogo{width:50%;}
 
     /* ------------------------------------ End of Footer ------------------------------------ */
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    #contactHeroSection{display:flex;
+        flex-direction:column;
+        height:auto;}
+    
+    #contactHeroDescriptor{margin-top:0px;
+        height:225px;
+        margin-bottom:10px;
+        margin-left:0px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;}
+    
+    #conHeroText1{top:35px;}
+    
+    #conHeroText2{top:30px;
+        font-size:35px;}
+    
+    .contactFormContainer{width:100%;}
+    
+    .contactPageForm{margin-top:0px;
+        min-width:0px;}
+    
+    .contactArrow{display:none;}
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-    #aboutHeroSection{height:600px;}
+    #aboutHeroSection{display:none;}
 
     #aboutHeroSection > .heroDescriptor{text-align: center;
     width: 100vw;
     padding: 0px;
     margin-left: 0px;
-    margin-top:175px;}
+    margin-top:0px;}
 
     .businessMan{display:none;}
 
     #aboutTitle{margin: auto;
+    margin-top:85px;
     text-shadow: 0px 0px 20px #ffffff;}
 
-    .descriptionSection{height:800px;}
-
-    .descriptionTextContainer{height:450px;
+    .descriptionSection{height:575px;
     flex-direction:column;}
 
-    .descriptionTextContainer > p{padding:0px;
-    width:90%;
-    margin:auto;}
+    .descriptionTextContainer{height:525px;
+    flex-direction:column;
+    background-color: #756b6b;
+    background-image:url("images/GenesisAboutSkyscraperImg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: overlay;
+    margin-top:50px;}
 
-    .descriptionImg{width:90%;}
+    .descriptionTextContainer > h1{color:#ffffff;
+    margin-top:50px;}
+
+    .descriptionTextContainer > p{padding:0px;
+        width:80%;
+        margin:auto;
+        color:#ffffff;}
+    
+    .descriptionImg{display:none;
+    width:90%;}
 
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    #servicesHeroSection{background-position: 60%;
+        background-position-y: 70px;}
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 }
 
 /* Phone */
 @media (min-width:0px) and (max-width:700px){
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* ------------------------------------ Hero Section ------------------------------------ */
+    .heroSection{height:650px;}
+
+    .gradientCover{height:650px;}
+
     .heroDescriptor{width:90vw;
         margin:auto;
+        margin-top:100px;
         display:flex;
         flex-direction:column;
         align-items: center;
@@ -672,7 +743,7 @@ background-color:var(--lightBlue3);}
     .heroDescriptor > p, h1{width:90%;
         margin:auto;}
 
-    .heroDescriptor > h1{font-size:45px;
+    .heroDescriptor > h1{font-size:40px;
     text-align:center;}    
 
     .heroDescriptor > button{margin:auto;
@@ -682,9 +753,10 @@ background-color:var(--lightBlue3);}
     /* ------------------------------------ End of Hero Section ------------------------------------ */
     /* ------------------------------------ Plan Section ------------------------------------ */
 
-    .plan{width:100%;
+    .plan{width:95%;
     max-width:none;
-    min-width:none;}
+    min-width:none;
+    border:2px solid #d9d9d9}
 
     /* ------------------------------------ End of Plan Section ------------------------------------ */
 
@@ -719,13 +791,16 @@ background-color:var(--lightBlue3);}
 
     .questionsContainer{flex-direction:column;}
 
+    .questionsText{margin:0px;
+    text-align: center;}
+
     .accordionContainer{min-width: 90%;}
 
     /* ------------------------------------ End of Questions Section ------------------------------------ */
 
     /* ------------------------------------ Footer ------------------------------------ */
 
-    .footerSection{flex-direction:column;}
+    .footerSection{flex-direction:column-reverse;}
 
     .footerSection > div{width:90%;}
 
@@ -735,16 +810,21 @@ background-color:var(--lightBlue3);}
 
     .phoneLink{display:block;}
 
+    #footerLogo{width:90%;}
+
     /* ------------------------------------ End of Footer ------------------------------------ */
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     #contactHeroSection{display:flex;
     flex-direction:column;
     height:auto;}
 
-    #contactHeroDescriptor{margin-top:75px;
-    height:325px;}
+    #contactHeroDescriptor{margin-top:0px;
+    height:225px;
+    margin-bottom:10px;}
+
+    #conHeroText2{top:0px;}
 
     .contactFormContainer{width:100%;}
 
@@ -755,7 +835,7 @@ background-color:var(--lightBlue3);}
 
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-    #aboutHeroSection{height:400px;}
+    #aboutHeroSection{display:none;}
 
     #aboutHeroSection > .heroDescriptor{text-align: center;
     width: 100vw;
@@ -766,24 +846,45 @@ background-color:var(--lightBlue3);}
     .businessMan{display:none;}
 
     #aboutTitle{margin: auto;
+    margin-top:85px;
     text-shadow: 0px 0px 20px #ffffff;}
 
-    .descriptionSection{height:1000px;}
-
-    .descriptionTextContainer{height:600px;
+    .descriptionSection{height:575px;
     flex-direction:column;}
+
+    .descriptionTextContainer{height:525px;
+    flex-direction:column;
+    background-color: #756b6b;
+    background-image:url("images/GenesisAboutSkyscraperImg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: overlay;
+    margin-top:50px;}
+
+    .descriptionTextContainer > h1{color:#ffffff;
+    margin-top:20px;}
 
     .descriptionTextContainer > p{padding:0px;
     width:90%;
-    margin:auto;}
+    margin:auto;
+    margin-bottom:20px;
+    color:#ffffff;}
 
-    .descriptionImg{width:90%;}
+    .descriptionImg{display:none;}
 
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-    #servicesHeroSection > .heroDescriptor{width:90%;}
+    #servicesHeroSection{height:575px;
+    background-position:10%;
+    background-size:175vh;}
+
+    #servicesHeroSection > .heroDescriptor{width:90%;
+    margin-top:50px;}
     
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 }
+
+
+
