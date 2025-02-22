@@ -1,6 +1,6 @@
 :root{--header:#0F337C;
 --footer:#00143D;
---textColor:#ffffff;
+--lightText:#ffffff;
 --btnPrimary:#006FFF;
 --darkText:#000000;
 --lightBlue1:#82B1F4;
@@ -12,17 +12,31 @@ body{margin:0px;
     overflow-x:hidden;
 }
 
-p{color:var(--darkText);
-font-family: "Lexend", sans-serif;
+p{font-family: "Lexend", sans-serif;
 font-optical-sizing: auto;
 font-style: normal;}
 
+p .darkText{color:var(--darkText);}
+
+p .lightText{color:var(--lightText);}
+
 h1, h2, h3, h4, h5, h6{font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;}
+    font-style: normal;
+    text-align: center;}
 
-input, textarea, label{width:100%;
-border-radius:10px;}
+img{width:100%;
+margin:0 auto;}
+
+input, textarea, label, form{width:100%;
+border-radius:20px;
+color:var(--lightText);
+padding:7px;}
+
+input, textarea{border:2px solid #ffffff}
+
+label{/*font-size:25px;*/
+margin:10px 0px 10px 0px;}
 
 textarea{height:200px;
 resize:none;}
@@ -40,14 +54,18 @@ font-size:30px;}
 
 .darkText{color:var(--darkText);}
 
-.lightText{color:var(--textColor);}
+.lightText{color:var(--lightText);}
 
 .card{margin:50px auto 50px auto;}
 
-.secondaryHeader{font-size:40px;
+.secondaryHeader{font-size:50px;
 font-family: "Merriweather", serif;
 font-weight: 400;
 font-style: normal;}
+
+.blackBorder{border:1px solid #000000;}
+
+#message{height:200px;}
 
 /* End of Elements */
 
@@ -111,10 +129,6 @@ margin-bottom:80px;
 z-index:1;
 }
 
-.heroDescriptor > h1{font-size:80px;}
-
-.heroDescriptor > p{font-size:20px;}
-
 /*------------------------------------------ End of Hero Section ------------------------------------------ */
 
 /*------------------------------------------ Plans Section ------------------------------------------ */
@@ -126,6 +140,8 @@ justify-content: space-around;
 padding:30px;
 background-image:url("../images/whiteBG.png");
 background-size:cover;}
+
+#cardAccordionContainer{display:none;}
 
 .plan{max-width:30%;
 min-width: 200px;
@@ -145,18 +161,8 @@ justify-content:space-evenly;}
 cursor:pointer;}
 
 .planImg{width:100%;
-height:100px;
-margin:auto;}
-
-.planHeader{width:100%;
-height:auto;
-text-align:center;
-margin:auto;
-font-size:35px;}
-
-.planDescription{width:100%;
-text-align:center;
-height:200px;
+max-height:50%;
+border-radius:5%;
 margin:auto;}
 
 /*------------------------------------------ End of Plans Section ------------------------------------------ */
@@ -169,20 +175,20 @@ background-color:var(--lightBlue1);
 display:flex;
 flex-direction:row;}
 
-.contactImg{width:45%;
+.contactImg{width:50%;
 height:100%;
 background-image:url("../images/GenesisContactImg.jpg");
 background-size:cover;
 background-position:center;}
 
-.inputContainer{width:55%;
+.inputContainer{width:50%;
 display: flex;
 flex-direction: column;
-align-items: center;
 justify-content: center;
+padding:2em;
 }
 
-.inputContainer > h1{color:var(--textColor);}
+.inputContainer > h1{color:var(--lightText);}
 
 .inputContainer > form{width:100%;
 display: flex;
@@ -190,44 +196,15 @@ flex-direction: column;
 align-items: center;
 justify-content: center;}
 
-/*.label{font-size:30px;
-color:var(--textColor);
-margin:auto;
-margin-left:110px;}
-
-.name{width:60%;}
-
-.email{width:70%;}
-
-.message{width:80%;
-height:200px;
-resize:none;
-border-radius:10px;}*/
-
-.contactInput{height:40px;
-margin:auto;
-margin-left:100px;
-border-radius:30px;
-border:1px solid #000000;
-padding:10px;}
-
-
-
 /*------------------------------------------ End of Contact Section ------------------------------------------ */
 
 /*------------------------------------------ Providers Section ------------------------------------------ */
 
-.providersContainer{width:100vw;
+.providersContainer{height:400px;
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;
-padding-top:50px;
-padding-bottom:100px;}
-
-.providersContainer > h1{font-size:60px;
-text-align:center;
-margin-bottom:50px;}
+justify-content:center;}
 
 .sliderContainer{overflow:hidden;
 width:100vw;
@@ -273,19 +250,14 @@ margin:auto;}
 
 /*------------------------------------------ Questions Section ------------------------------------------ */
 
-.questionsContainer{width:100vw;
-height:auto;
-padding:100px 30px;
+.questionsContainer{padding:100px 30px;
 background-color:var(--lightBlue3);
 display:flex;
 flex-direction:row;
 align-items:center;
 justify-content:center;}
 
-.questionsText{width:40%;
-min-width:300px;
-margin:auto;
-margin-top:20px;
+.questionsText{width:50%;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -304,13 +276,12 @@ min-width:400px;
 max-width:800px;}
 
 .accordionTitle{width:100%;
-background-color:var(--footer);
-color:var(--textColor);
 height:80px;
+background-color:var(--footer);
+color:var(--lightText);
+padding:5px;
 border-radius: 15px 15px 0px 0px;
 display:none;}
-
-.accordionTitle > h1{font-size:1em;}
 
 /*------------------------------------------ End of Questions Section ------------------------------------------ */
 
@@ -339,27 +310,18 @@ justify-content:center;}
 margin:auto;
 text-align:center;}
 
-.footerSection > div > h1{font-size:50px;
-margin:auto;}
-
-.footerSection > div > h3{font-size:30px;
-margin:auto;}
-
-.footerSection > div > a{font-size:30px;
-margin:auto;}
-
 .footerServing{text-align:center;
-color:var(--textColor);
+color:var(--lightText);
 text-align:center;}
 
-.footerContact{color:var(--textColor);
+.footerContact{color:var(--lightText);
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;}
 
-.footerLink{color:var(--textColor);}
+.footerLink{color:var(--lightText);}
 
 .footerHeartbeat{width:100vw;
 height:80px;
@@ -369,8 +331,6 @@ background-repeat:repeat-x;
 background-position:center;}
 
 /*------------------------------------------ End of Footer ------------------------------------------ */
-
-
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Keyframes @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -397,11 +357,6 @@ background-position:center;}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Keyframes @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
-
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -441,7 +396,8 @@ border-radius:50px;
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;}
+justify-content:center;
+padding:20px;}
 
 .contactPageForm > label{color:var(--darkText);}
 
@@ -526,8 +482,6 @@ background-position:center;
 border-radius:30px;
 box-shadow:0px 10px 10px #c1c1c1;}
 
-
-
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -537,7 +491,7 @@ background-size:cover;
 background-position:center;
 background-position-y:top;}
 
-#servicesHeroSection > .heroDescriptor{width:50%;
+#servicesHeroSection > .heroDescriptor{width:75vw;
 margin:auto;
 padding:0px;
 display:flex;
@@ -555,6 +509,3 @@ padding:100px 50px;}
 background-color:var(--lightBlue3);}
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media Queries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
