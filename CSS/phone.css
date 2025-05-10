@@ -1,0 +1,181 @@
+/* Phone */
+@media (min-width:0px) and (max-width:700px){
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ------------------------------------ Hero Section ------------------------------------ */
+    .heroSection{height:650px;}
+
+    .gradientCover{height:650px;}
+
+    .heroDescriptor{width:90vw;
+        margin:auto;
+        margin-top:100px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-evenly;}
+
+    /*.heroDescriptor > p, h1{width:90%;
+        margin:auto;}*/
+
+    .heroDescriptor > button{margin:auto;
+    margin-top:10px;}
+
+    .gradientCover{background: rgb(114,114,114,0.5);}
+    /* ------------------------------------ End of Hero Section ------------------------------------ */
+    /* ------------------------------------ Plan Section ------------------------------------ */
+
+    #cardContainer{display:none!important;}
+
+    #cardAccordionContainer{display:flex;
+    width:100%;}
+
+    #cardAccordionContainer > *{width:100%;}
+
+    .planSection{background-size:cover;
+    display:flex;
+    flex-direction: column;}
+
+    .planGradient{display:none;}
+
+    .planDescription{width:85vw;
+    margin-bottom:30px;}
+
+    /* ------------------------------------ End of Plan Section ------------------------------------ */
+
+    /* ------------------------------------ Contact Section ------------------------------------ */
+
+    .contactSection{padding-bottom:20px;
+    padding-top:20px;
+    height:auto;}
+
+    .contactImg{display:none;}
+
+    .inputContainer{min-width:100%;
+    justify-content: start;}
+
+    .inputContainer > h1{margin-top:0px;
+    margin-bottom:0px;
+    text-align:center;}
+
+    .contactInput{margin-left:auto;}
+
+    /*.label{margin-left:40px;}
+
+    .name{width:80%;}
+
+    .email{width:80%;}*/
+
+    /* ------------------------------------ End of Contact Section ------------------------------------ */
+
+    /*------------------------------------------ Providers Section ------------------------------------------ */
+
+    .sliderContainer{width:200vw;}
+
+    .imgSlider{min-width:400%;}
+
+    /*------------------------------------------ End of Providers Section ------------------------------------------ */
+    
+    /* ------------------------------------ Questions Section ------------------------------------ */
+
+    .questionsContainer{flex-direction:column;}
+
+    .questionsText{display:none;}
+
+    .questionsText > p{display:none;}
+
+    .accordionContainer{min-width: 90%;}
+
+    .accordionTitle{display:flex;
+    text-align:center;}
+
+    /* ------------------------------------ End of Questions Section ------------------------------------ */
+
+    /* ------------------------------------ Footer ------------------------------------ */
+
+    .footerSection{flex-direction:column-reverse;}
+
+    .footerSection > div{width:90%;}
+
+    .footerSection > div > a{font-size:25px;
+    margin-top:15px;
+    margin-bottom:15px;}
+
+    .phoneLink{display:block;}
+
+    #footerLogo{width:90%;}
+
+    /* ------------------------------------ End of Footer ------------------------------------ */
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Index.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    #contactHeroSection{display:flex;
+    flex-direction:column;
+    height:auto;}
+
+    #contactHeroDescriptor{margin-top:0px;
+    height:225px;
+    margin-bottom:10px;}
+
+    #conHeroText2{top:15px;}
+
+    .contactFormContainer{width:100%;}
+
+    .contactPageForm{margin-top:0px;
+    min-width:0px;}
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Contact.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    #aboutHeroSection{display:none;}
+
+    #aboutHeroSection > .heroDescriptor{text-align: center;
+    width: 100vw;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top:0px;}
+
+    .businessMan{display:none;}
+
+    #aboutTitle{margin: auto;
+    margin-top:85px;
+    text-shadow: 0px 0px 20px #ffffff;}
+
+    .descriptionSection{height:575px;
+    flex-direction:column;}
+
+    .descriptionTextContainer{height:525px;
+    flex-direction:column;
+    background-color: #756b6b;
+    background-image:url("../images/GenesisAboutSkyscraperImg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    margin-top:50px;}
+
+    .descriptionTextContainer > h1{color:#ffffff;
+    margin-top:20px;}
+
+    .descriptionTextContainer > p{padding:0px;
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
+    color:#ffffff;}
+
+    .descriptionImg{display:none;}
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    #servicesHeroSection{height:575px;
+    background-position:10%;
+    background-size:175vh;}
+
+    #servicesHeroSection > .heroDescriptor{width:90%;
+    margin-top:75px;}
+    
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+}
