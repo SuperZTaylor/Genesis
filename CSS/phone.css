@@ -86,7 +86,10 @@
     .accordionContainer{min-width: 90%;}
 
     .accordionTitle{display:flex;
-    text-align:center;}
+    text-align:center;
+    align-items: center;}
+
+    .accordionTitle > h1{height:30px;}
 
     /* ------------------------------------ End of Questions Section ------------------------------------ */
 

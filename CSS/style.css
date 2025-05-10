@@ -132,6 +132,8 @@ margin-bottom:80px;
 z-index:1;
 }
 
+.heroDescriptor > p{font-size: 1.3rem;}
+
 /*------------------------------------------ End of Hero Section ------------------------------------------ */
 
 /*------------------------------------------ Plans Section ------------------------------------------ */
@@ -272,7 +274,9 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-text-align:center;}
+text-align:center;
+margin:auto;
+margin-top:40px;}
 
 .questionsText > h1{margin-bottom:30px;
 text-align: center;}
