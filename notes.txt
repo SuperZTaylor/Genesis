@@ -2,6 +2,5 @@
 
 1. Fix all existing text from lorem ipsum and change it to actual sentences.
 2. Change plans in plan section to be accurate.
-3. Change Meta tags to have domain name
 4. alt text for images.
-6. Add image to the url, the spot on the web where the url is.
+5. Add image to the url, the spot on the web where the url is.
