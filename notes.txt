@@ -1,6 +1,3 @@
 ---- Requirments/Notes ----
 
-1. Fix all existing text from lorem ipsum and change it to actual sentences.
-2. Change plans in plan section to be accurate.
-4. alt text for images.
-5. Add image to the url, the spot on the web where the url is.
+1. Fix plan section and its text.

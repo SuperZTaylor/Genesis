@@ -490,7 +490,8 @@ height:400px;
 margin:auto;
 margin-left:50px;
 display:flex;
-background-image:url("../images/GenesisAboutSkyscraperImg.jpg");
+background-color: #09185b;
+background-image:url("../images/GenesisAmericanFlag.jpg");
 background-size:cover;
 background-repeat: no-repeat;
 background-position:center;
@@ -513,6 +514,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;}
+
+#servicesHeroSection > .heroDescriptor > p::before{content:"Selecting the right insurance plan is crucial, as it goes beyond just coverage—it's about ensuring your security, achieving peace of mind, and making smart financial decisions. At Genesis Life & Health, we specialize in simplifying the insurance process, helping you discover the best plan tailored to your health, life, or business needs without the usual hassle. Whether you’re looking for health insurance, life insurance, or coverage for your business, our expert team is here to guide you toward suitable options.";
+}
+
+#servicesHeroSection > .heroDescriptor > p{width:65%;}
 
 .servicesSection{background-color:var(--lightBlue3);
 height:auto;
