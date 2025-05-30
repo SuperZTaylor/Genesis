@@ -41,6 +41,13 @@
     margin-bottom:30px;
     padding:20px;}
 
+    .planContainer{width:100vw;}
+
+    .plan{width:90%;
+    height:500px;}
+
+    .planHeader > h1{padding:5px !important;}
+
     /* ------------------------------------ End of Plan Section ------------------------------------ */
 
     /* ------------------------------------ Contact Section ------------------------------------ */

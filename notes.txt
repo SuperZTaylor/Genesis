@@ -1,3 +1,7 @@
 ---- Requirments/Notes ----
 
-1. Fix plan section and its text.
+- Fix plan section and its text.
+
+- Animated Buttons?
+
+- Check for Sub Keywords. e.g. Search Group Insurance on Google and see the most asked questions after it
