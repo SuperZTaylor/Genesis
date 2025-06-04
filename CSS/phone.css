@@ -67,12 +67,6 @@
 
     .contactInput{margin-left:auto;}
 
-    /*.label{margin-left:40px;}
-
-    .name{width:80%;}
-
-    .email{width:80%;}*/
-
     /* ------------------------------------ End of Contact Section ------------------------------------ */
 
     /*------------------------------------------ Providers Section ------------------------------------------ */
@@ -138,55 +132,23 @@
 
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-    #aboutHeroSection{display:none;}
+    #aboutHeroSection{height:auto;}
 
-    #aboutHeroSection > .heroDescriptor{text-align: center;
-    width: 100vw;
-    padding: 0px;
-    margin-left: 0px;
-    margin-top:0px;}
-
-    .businessMan{display:none;}
-
-    #aboutTitle{margin: auto;
+    #aboutTitle{height:auto;
+    margin: auto;
     margin-top:85px;
-    text-shadow: 0px 0px 20px #ffffff;}
+    text-shadow: 0px 0px 20px #ffffff;
+    margin-bottom: 0px;}
 
-    .descriptionSection{height:725px;
-    flex-direction:column;}
+    .descriptionSection{height:auto;
+    flex-direction:column-reverse;}
 
-    .descriptionTextContainer{height:700px;
-    flex-direction:column;
-    background-color: #756b6b;
-    background-image:url("../images/GenesisAmericanFlag.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    margin-top:50px;}
+    .descriptionSection > p{width:95%;}
 
-    .descriptionTextContainer > h1{color:#ffffff;
-    margin-top:20px;
-    z-index: 1;
-    text-shadow:0px 0px 20px #000000;}
+    .descriptionImg{width:50%;
+        margin:auto;}
 
-    .descriptionTextContainer > p{padding:0px;
-    width:90%;
-    margin:auto;
-    margin-bottom:20px;
-    color:#ffffff;
-    font-size: 18px;
-    z-index: 1;
-    text-shadow:0px 1px 20px #000000;}
-
-    .descriptionImg{display:none;}
-
-    .darkGradient{width:100vw;
-        height:745px;
-        background-color:rgba(0, 0, 0, 0.3);
-        position:absolute;
-    }
+    #aboutRoundedFlag{width:80%;}
 
     /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 

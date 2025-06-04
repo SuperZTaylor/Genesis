@@ -77,6 +77,8 @@ font-style: normal;}
     margin:auto;
 }
 
+.rounded{border-radius: 50% !important;}
+
 /* End of Elements */
 
 /*------------------------------------------ Navbar ------------------------------------------ */
@@ -453,78 +455,40 @@ padding:20px;}
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-#aboutHeroSection{background-image:none;}
+#aboutHeroSection{height:450px;
+background-image: none !important;}
 
-#aboutHeroSection > .heroDescriptor{position:absolute;
-margin-top:200px;
-padding-left:100px;
-z-index:2;}
+#aboutTitle{width:60vw;
+text-align: center;
+margin:auto;
+margin-top: 125px;
+}
 
-.sectionCircle{width:700px;
-height:700px;
-min-width:700px;
-min-height:700px;
-border-radius:50%;
-border:2px solid #c1c1c1;
-position:absolute;
-background-color:#ffffff;}
+.descriptionSection{width:90vw;
+    height:600px !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff !important;
+    margin:auto;
+}
 
-.businessMan{height:600px;
-width:auto;
-z-index:3;
-position:absolute;
-top:200px;
-right:100px;}
-
-#circle1{right:-225px;
-top:0px;
-box-shadow:0px 0px 100px #90ff7e}
-
-#circle2{top:225px;
-right:-100px;
-z-index:1;
-box-shadow:0px 0px 100px #bcbcbc}
-
-#circle3{top:375px;
-right:100px;
-box-shadow:0px 0px 100px #38bffe}
-
-.aboutHeroImgs{width:100vw;
-overflow:hidden;
-position:relative;}
+.descriptionSection > p{width:35%;
+    height:auto;
+    margin:auto;
+    font-size: 20px;
+}
 
 #aboutContactSection > .inputContainer{background-color:var(--lightBlue1);}
 
-.descriptionSection{width:100vw;
-height:800px;
-background-color:var(--lightBlue2);
-display:flex;
-flex-direction:row-reverse;}
-
-.descriptionTextContainer{width:100vw;
-height:400px;
-background-color:var(--lightBlue2);
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:space-evenly;
-margin:auto;}
-
-.descriptionTextContainer > p{width:80%;
-font-size:20px;}
-
-.descriptionImg{width:50%;
-height:400px;
+.descriptionImg{width:40%;
+height:auto;
 margin:auto;
 margin-left:50px;
-display:flex;
-background-color: #09185b;
-background-image:url("../images/GenesisAmericanFlag.jpg");
 background-size:cover;
 background-repeat: no-repeat;
-background-position:center;
-border-radius:30px;
-box-shadow:0px 10px 10px #c1c1c1;}
+background-position:center;}
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of About.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
