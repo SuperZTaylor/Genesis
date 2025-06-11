@@ -20,6 +20,8 @@
     .planDescription{width:85vw;
     margin-bottom:30px;}
 
+    .planContainer{width:85vw;}
+
     /* ------------------------------------ End of Plan Section ------------------------------------ */
 
     /* ------------------------------------ Contact Section ------------------------------------ */
@@ -74,7 +76,7 @@
     min-width:200%;
     padding:30px 0px;
     background-color:var(--lightBlue2);
-    animation: 8s slide infinite linear;
+    animation: 20s slide infinite linear;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,7 +93,8 @@
 
     .accordionContainer{min-width: 90%;}
 
-    .questionsText{width:80vw;}
+    .questionsText{width:80vw;
+    margin-bottom: 60px;}
 
    /* .questionsText > p{font-size:20px;
     width:65vw;}*/
@@ -166,10 +169,12 @@
     #servicesHeroSection{background-position: 60%;
         background-position-y: 70px;}
 
-    #servicesHeroSection > .heroDescriptor > p::before{width:80%;
+    #servicesHeroSection > .heroDescriptor > p::before{width:100%;
         content:"Selecting the right insurance plan is crucial, as it goes beyond just coverage—it's about ensuring your security, achieving peace of mind, and making smart financial decisions. At Genesis Life & Health, we specialize in simplifying the insurance process, helping you discover the best plan tailored to your health, life, or business needs without the usual hassle. Whether you’re looking for health insurance, life insurance, or coverage for your business, our expert team is here to guide you toward suitable options.";
     }
 
+    #servicesHeroSection > .heroDescriptor > p{width:100%;
+    text-shadow: 0px 0px 10px #000000;}
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Services.html @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 }
