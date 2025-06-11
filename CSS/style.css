@@ -39,7 +39,8 @@ border-radius:20px;
 color:var(--lightText);
 padding:7px;}
 
-input, textarea{border:2px solid #ffffff}
+input, textarea{border:2px solid #ffffff;
+color:#000000;}
 
 label{font-size:25px;
 margin:10px 0px 10px 0px;}
