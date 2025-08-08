@@ -103,7 +103,10 @@
   <div class="contactImg"></div>
   <div class="inputContainer">
     <h1 class="secondaryHeader">Contact Us</h1>
-    <form name="contactAboutPage" method="POST" data-netlify="true">
+    <form name="contactAboutPage" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+
+      <input type="text" name="bot-field" style="display:none">
+
       <label class="label" for="name">Name</label>
       <input class="name contactInput" name="name" id="name" type="text" placeholder="John Doe" required>
       <label class="label" for="email">Email</label>

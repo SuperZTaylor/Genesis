@@ -86,7 +86,10 @@
   
 <!-- Contact Section -->
   <div class="contactFormContainer">
-    <form class="contactPageForm" name="contact" method="POST" data-netlify="true">
+    <form class="contactPageForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+
+      <input type="text" name="bot-field" style="display:none">
+
       <label class="label" for="name">Name</label>
       <input class="name contactInput blackBorder" name="name" id="name" type="text" placeholder="John Doe" required>
       <label class="label" for="email">Email</label>
