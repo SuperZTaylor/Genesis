@@ -190,9 +190,10 @@
   <div class="contactImg"></div>
   <div class="inputContainer">
     <h1 class="secondaryHeader">Contact Us</h1>
-    <form name="contactServicesPage" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form name="contactServicesPage" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 
       <input type="text" name="bot-field" style="display:none">
+      <input type="hidden" name="form-name" value="contactServicesPage"> 
 
       <label class="label" for="name">Name</label>
       <input class="name contactInput" name="name" id="name" type="text" placeholder="John Doe" required>
@@ -201,6 +202,7 @@
       <label class="label" for="message">Message</label>
       <textarea class="message contactInput" name="message" id="message" placeholder="Message..." required></textarea>
 
+      <div data-netlify-recaptcha="true"></div>
       <button class="primaryBtn rounded-pill m-3" type="submit">Submit  <i class="bi bi-envelope"></i></button>
     </form>
   </div>
