@@ -86,7 +86,7 @@
   
 <!-- Contact Section -->
   <div class="contactFormContainer">
-    <form class="contactPageForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+    <form class="contactPageForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/success">
 
       <input type="text" name="bot-field" style="display:none">
       <input type="hidden" name="form-name" value="contact">
@@ -98,7 +98,7 @@
       <label class="label" for="message">Message</label>
       <textarea class="message contactInput blackBorder" name="message" id="message" placeholder="Message..." required></textarea>
 
-      <div data-netlify-recaptcha="true"></div>
+      <div class="mt-3" data-netlify-recaptcha="true"></div>
       <button class="primaryBtn rounded-pill m-3" type="submit">Submit  <i class="bi bi-envelope"></i></button>
     </form>
   </div>
