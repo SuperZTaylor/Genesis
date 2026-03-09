@@ -90,7 +90,7 @@ font-style: normal;}
 
 .blackBorder{border:1px solid #000000;}
 
-#message{height:200px;}
+#message{min-height:200px;}
 
 .carouselBtn{width:60px;
     height:60px;
