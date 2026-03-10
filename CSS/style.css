@@ -452,10 +452,10 @@ justify-content:center;}
 
 .contactPageForm{width:90%;
 min-width:500px;
-height:70%;
+height:80%;
 margin:auto;
 background-color:var(--lightBlue2);
-margin-bottom:80px;
+margin-bottom:25px;
 border-radius:50px;
 display:flex;
 flex-direction:column;
