@@ -77,7 +77,7 @@
 
     .sliderContainer{width:200vw;}
 
-    .imgSlider{min-width:400%;
+    .imgSlider{min-width:3300px;
     animation: 20s slide infinite linear;}
 
     /*------------------------------------------ End of Providers Section ------------------------------------------ */
